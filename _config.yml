@@ -60,7 +60,7 @@ plugins:
 author:
   name   : "TheSinghSec"
   avatar : "/assets/images/profile.png"
-  bio    : "My expertise lies in conducting targeted penetration tests across various environments, including web applications, APIs, network infrastructure and more"
+  bio    : "My expertise lies in conducting targeted penetration tests across various environments, including web applications, APIs, network infrastructure and more."
   links:
     - label: "LinkedIn"
       icon: "fa-brands fa-linkedin"
