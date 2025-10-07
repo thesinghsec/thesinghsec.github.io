@@ -40,11 +40,8 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 <h2 id="present_status"> Present Status </h2>
 
 👉 Still Learning Offensive Security.
-
 👉 Managing Content creation.
-
 👉 Writing Some Useful Blogs and Testing Methodologies For Myself & Communities
-
 👉 Currently Learning Mobile Pentesting
 
 `Updating:`  Journey to Cybersecurity Specialist.
@@ -54,7 +51,6 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 <h2 id="knowledge_skills" align=''> Knowledge & Skills </h2>
 
 <br>
-
 <div style="border: 2px solid #22F700; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
   <div align="left" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
       <img src="https://img.shields.io/badge/Burp_Suite-FF6633?style=for-the-badge&logo=burp-suite&color=000000" alt="Burp Suite" />
@@ -72,11 +68,9 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 
 ---
 
-
 <h2 id="donate" align=''> Support⚡️</h2>
 
   <p align="left"><a href="https://buymeacoffee.com/thesinghsec"><img  src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black"/></a></p>
-
 
 <p align="center">
   <b><i>"Never give up. Never back down."</i></b>
