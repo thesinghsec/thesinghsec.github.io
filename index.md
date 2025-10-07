@@ -39,10 +39,10 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 
 <h2 id="present_status"> Present Status </h2>
 
-👉 Still Learning Offensive Security.
-👉 Managing Content creation.
-👉 Writing Some Useful Blogs and Testing Methodologies For Myself & Communities
-👉 Currently Learning Mobile Pentesting
+- [x] Still Learning Offensive Security.
+- [x] Managing Content creation.
+- [x] Writing Some Useful Blogs and Testing Methodologies For Myself & Communities
+- [x] Currently Learning Mobile Pentesting
 
 `Updating:`  Journey to Cybersecurity Specialist.
 
