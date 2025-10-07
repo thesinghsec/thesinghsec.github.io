@@ -20,7 +20,7 @@ author_profile: true
   <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px"/>
 </h2>
 
-I'm **[`TheSinghSec`](https://www.linkedin.com/bikramjeetx)**, a Security Researcher and aspiring Cybersecurity Specialist. My expertise lies in conducting targeted penetration tests across various environments, including web applications, APIs, network infrastructure and more. I use a blend of automated tools and manual techniques to assess security controls and identify complex vulnerabilities. My primary goal is to provide a realistic assessment of an organization's security and support their efforts to build more resilient systems.
+I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Researcher and aspiring Cybersecurity Specialist. My expertise lies in conducting targeted penetration tests across various environments, including web applications, APIs, network infrastructure and more. I use a blend of automated tools and manual techniques to assess security controls and identify complex vulnerabilities. My primary goal is to provide a realistic assessment of an organization's security and support their efforts to build more resilient systems.
 
 
 <details>
@@ -32,7 +32,7 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/bikramjeetx)**, a Security Resear
 - i have experience in **Offensive Side**
 - Improving knowledge in **Webapp Vulnerabilities**
 - Lifelong learner — always exploring **everything**
-- Reach me out at **[`LinkedIn`](https://www.linkedin.com/bikramjeetx)**
+- Reach me out at **[`LinkedIn`](https://www.linkedin.com/in/bikramjeetx/)**
 
 </details>
 <br>
