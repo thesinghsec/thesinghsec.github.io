@@ -32,6 +32,7 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 - Improving knowledge in **Webapp Vulnerabilities**
 - Lifelong learner — always exploring **everything**
 - Reach me out at **[`LinkedIn`](https://www.linkedin.com/in/bikramjeetx/)**
+
 </details>
 
 ---
