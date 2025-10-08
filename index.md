@@ -22,18 +22,17 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 
 
 <details>
+  
   <summary>More about me</summary>
-
+  
 - **Name**: Bikramjeet Singh
 - **From**: United Kingdom
 - **Security Researcher** | **Penetration Tester**
-- i have experience in **Offensive Side**
+- I have experience in **Offensive Side**
 - Improving knowledge in **Webapp Vulnerabilities**
 - Lifelong learner — always exploring **everything**
 - Reach me out at **[`LinkedIn`](https://www.linkedin.com/in/bikramjeetx/)**
-
 </details>
-<br>
 
 ---
 
@@ -44,7 +43,7 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 - [x] Writing Some Useful Blogs and Testing Methodologies For Myself & Communities
 - [x] Currently Learning Mobile Pentesting
 
-`Updating:`  Journey to Cybersecurity Specialist.
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=14&duration=2000&pause=1000&color=38C2FF&background=45FF1A00&center=true&vCenter=true&width=435&height=30&lines=Updating%3A+Journey+to+Cybersecurity+Specialist)](https://git.io/typing-svg)
 
 ---
 
