@@ -43,7 +43,7 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 - [x] Writing Some Useful Blogs and Testing Methodologies For Myself & Communities
 - [x] Currently Learning Mobile Pentesting
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=14&duration=2000&pause=1000&color=38C2FF&background=45FF1A00&center=true&vCenter=true&width=435&height=30&lines=Updating%3A+Journey+to+Cybersecurity+Specialist)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=14&duration=2000&pause=1000&color=38C2FF&background=45FF1A00&center=true&vCenter=true&width=435&height=20&lines=Updating%3A+Journey+to+Cybersecurity+Specialist)](https://git.io/typing-svg)
 
 ---
 
@@ -66,6 +66,12 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 </div>
 
 ---
+
+
+<h2 id="github_stats" align=''>GitHub Stats 👨‍💻</h2>
+
+  [![TheSinghSec's GitHub stats-Dark](https://github-readme-stats.vercel.app/api?username=thesinghsec&show_icons=true&theme=dark#gh-dark-mode-only)](https://github.com/thesinghsec/github-readme-stats#gh-dark-mode-only)
+  [![GitHub Streak](https://streak-stats.demolab.com?user=thesinghsec&theme=burnt-neon&border_radius=5&fire=EBCA01&ring=FF5B5B&currStreakNum=66FF00&sideNums=66FF00&sideLabels=EBEBEB)](https://git.io/streak-stats)
 
 <h2 id="donate" align=''> Support⚡️</h2>
 
