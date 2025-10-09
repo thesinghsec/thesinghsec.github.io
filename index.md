@@ -22,7 +22,7 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 
 ---
 
-<h2 align="left">🧭 Present Status</h2>
+<h2 align="left">Present Status 🧭</h2>
 
 <table align="center" style="border-collapse: separate; border-spacing: 18px;">
   <tr>
@@ -203,7 +203,7 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 
 ---
 
-## Skills🧠
+## Skills 🧠
 
 <div style="border:2px solid transparent;border-radius:10px;padding:20px;margin-bottom:20px;">
   <div align="left" style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px;">
@@ -227,6 +227,9 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
       src="https://img.shields.io/badge/Email%20Phishing%20Testing-1A1F2B?style=for-the-badge&labelColor=111827&logo=maildotru&logoColor=FFD700"></a>
     <a><img class="badge" alt="GitHub"
       src="https://img.shields.io/badge/GitHub-1A1F2B?style=for-the-badge&labelColor=111827&logo=github&logoColor=FFFFFF"></a>
+    <a><img class="badge" alt="WiFi"
+      src="https://img.shields.io/badge/WiFi-1A1F2B?style=for-the-badge&labelColor=111827&logo=ubiquiti&logoColor=FFFFFF"></a>
+
   </div>
 </div>
 
@@ -244,7 +247,7 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 
 
 
-## Certifications🎓
+## Certifications 🎓
 <div>
 <img src="https://img.shields.io/badge/-OSCP-DA1F26?style=for-the-badge&logo=linux&logoColor=white" />
 <img src="https://img.shields.io/badge/-PNPT-0A66C2?style=for-the-badge&logo=hackthebox&logoColor=white" />
@@ -339,7 +342,7 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 
   
 
-<h2 id="donate" align="center"> Support⚡️</h2>
+<h2 id="donate" align="center"> Support ⚡️</h2>
 
   <p align="center"><a href="https://buymeacoffee.com/thesinghsec"><img  src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black"/></a></p>
 
