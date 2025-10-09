@@ -131,6 +131,47 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 
 
 
+## Skills 🧠
+
+<div style="border:2px solid transparent;border-radius:10px;padding:20px;margin-bottom:20px;">
+  <div align="left" style="display:flex;flex-wrap:wrap;justify-content:left;gap:10px;">
+    <a><img class="badge" alt="Web Apps & APIs"
+      src="https://img.shields.io/badge/Web%20Apps%20%26%20APIs-1A1F2B?style=for-the-badge&labelColor=111827&logo=googlechrome&logoColor=1E90FF"></a>
+    <a><img class="badge" alt="Infrastructure"
+      src="https://img.shields.io/badge/Infrastructure-1A1F2B?style=for-the-badge&labelColor=111827&logo=linux&logoColor=DA1F26"></a>
+    <a><img class="badge" alt="Gen AI App Testing"
+      src="https://img.shields.io/badge/Gen%20AI%20App%20Testing-1A1F2B?style=for-the-badge&labelColor=111827&logo=openai&logoColor=FF8C00"></a>
+    <a><img class="badge" alt="Thick Client Apps"
+      src="https://img.shields.io/badge/Thick%20Client%20Apps-1A1F2B?style=for-the-badge&labelColor=111827&logo=windows&logoColor=5C2D91"></a>
+    <a><img class="badge" alt="System Build Reviews"
+      src="https://img.shields.io/badge/System%20Build%20Reviews-1A1F2B?style=for-the-badge&labelColor=111827&logo=dell&logoColor=32CD32"></a>
+    <a><img class="badge" alt="Mobile App Testing"
+      src="https://img.shields.io/badge/Mobile%20App%20Testing-1A1F2B?style=for-the-badge&labelColor=111827&logo=android&logoColor=3DDC84"></a>
+    <a><img class="badge" alt="System Breakout Testing"
+      src="https://img.shields.io/badge/System%20Breakout%20Testing-1A1F2B?style=for-the-badge&labelColor=111827&logo=redhat&logoColor=DC143C"></a>
+    <a><img class="badge" alt="Cloud Config Reviews"
+      src="https://img.shields.io/badge/Cloud%20Config%20Reviews-1A1F2B?style=for-the-badge&labelColor=111827&logo=cloudflare&logoColor=00BFFF"></a>
+    <a><img class="badge" alt="Email Phishing Testing"
+      src="https://img.shields.io/badge/Email%20Phishing%20Testing-1A1F2B?style=for-the-badge&labelColor=111827&logo=maildotru&logoColor=FFD700"></a>
+    <a><img class="badge" alt="GitHub"
+      src="https://img.shields.io/badge/GitHub-1A1F2B?style=for-the-badge&labelColor=111827&logo=github&logoColor=FFFFFF"></a>
+    <a><img class="badge" alt="WiFi"
+      src="https://img.shields.io/badge/WiFi-1A1F2B?style=for-the-badge&labelColor=111827&logo=ubiquiti&logoColor=FFFFFF"></a>
+
+  </div>
+</div>
+
+<style>
+  .badge {
+    display: block;
+    height: 28px;
+    filter: drop-shadow(0 0 1px rgba(255,255,255,0.15));
+    transition: filter 0.2s ease;
+  }
+  .badge:hover {
+    filter: drop-shadow(0 0 6px rgba(0,255,128,0.6));
+  }
+</style>
 
 
 
@@ -238,48 +279,6 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 
 
 ---
-
-## Skills 🧠
-
-<div style="border:2px solid transparent;border-radius:10px;padding:20px;margin-bottom:20px;">
-  <div align="left" style="display:flex;flex-wrap:wrap;justify-content:left;gap:10px;">
-    <a><img class="badge" alt="Web Apps & APIs"
-      src="https://img.shields.io/badge/Web%20Apps%20%26%20APIs-1A1F2B?style=for-the-badge&labelColor=111827&logo=googlechrome&logoColor=1E90FF"></a>
-    <a><img class="badge" alt="Infrastructure"
-      src="https://img.shields.io/badge/Infrastructure-1A1F2B?style=for-the-badge&labelColor=111827&logo=linux&logoColor=DA1F26"></a>
-    <a><img class="badge" alt="Gen AI App Testing"
-      src="https://img.shields.io/badge/Gen%20AI%20App%20Testing-1A1F2B?style=for-the-badge&labelColor=111827&logo=openai&logoColor=FF8C00"></a>
-    <a><img class="badge" alt="Thick Client Apps"
-      src="https://img.shields.io/badge/Thick%20Client%20Apps-1A1F2B?style=for-the-badge&labelColor=111827&logo=windows&logoColor=5C2D91"></a>
-    <a><img class="badge" alt="System Build Reviews"
-      src="https://img.shields.io/badge/System%20Build%20Reviews-1A1F2B?style=for-the-badge&labelColor=111827&logo=dell&logoColor=32CD32"></a>
-    <a><img class="badge" alt="Mobile App Testing"
-      src="https://img.shields.io/badge/Mobile%20App%20Testing-1A1F2B?style=for-the-badge&labelColor=111827&logo=android&logoColor=3DDC84"></a>
-    <a><img class="badge" alt="System Breakout Testing"
-      src="https://img.shields.io/badge/System%20Breakout%20Testing-1A1F2B?style=for-the-badge&labelColor=111827&logo=redhat&logoColor=DC143C"></a>
-    <a><img class="badge" alt="Cloud Config Reviews"
-      src="https://img.shields.io/badge/Cloud%20Config%20Reviews-1A1F2B?style=for-the-badge&labelColor=111827&logo=cloudflare&logoColor=00BFFF"></a>
-    <a><img class="badge" alt="Email Phishing Testing"
-      src="https://img.shields.io/badge/Email%20Phishing%20Testing-1A1F2B?style=for-the-badge&labelColor=111827&logo=maildotru&logoColor=FFD700"></a>
-    <a><img class="badge" alt="GitHub"
-      src="https://img.shields.io/badge/GitHub-1A1F2B?style=for-the-badge&labelColor=111827&logo=github&logoColor=FFFFFF"></a>
-    <a><img class="badge" alt="WiFi"
-      src="https://img.shields.io/badge/WiFi-1A1F2B?style=for-the-badge&labelColor=111827&logo=ubiquiti&logoColor=FFFFFF"></a>
-
-  </div>
-</div>
-
-<style>
-  .badge {
-    display: block;
-    height: 28px;
-    filter: drop-shadow(0 0 1px rgba(255,255,255,0.15));
-    transition: filter 0.2s ease;
-  }
-  .badge:hover {
-    filter: drop-shadow(0 0 6px rgba(0,255,128,0.6));
-  }
-</style>
 
 
 
