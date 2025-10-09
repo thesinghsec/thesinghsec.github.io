@@ -149,18 +149,35 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 
 
 
+
+
 <h2 id="github_stats">GitHub Stats 👨‍💻</h2>
 
 <style>
-  /* optional: make it look like your screenshot */
-  .gh-wrap { display: grid; grid-template-columns: 55% 45%; gap: 1rem; align-items: center; }
-  .gh-left a img { display:block; width:100%; max-width: 700px; margin-bottom: 10px; }
-  .gh-right { text-align:center; }
-  .gh-right img { max-width: 350px; width:100%; }
-  @media (max-width: 800px){ .gh-wrap { grid-template-columns: 1fr; } }
+  /* Layout */
+  .gh-wrap{
+    display:grid;
+    grid-template-columns:55% 45%;
+    gap:16px;
+    align-items:start;
+  }
+  @media (max-width:900px){
+    .gh-wrap{ grid-template-columns:1fr; }
+  }
+  /* Left column */
+  .gh-left a img{ display:block; width:100%; height:auto; }
+  .gh-typing{ margin-top:12px; max-width:360px; }
+  /* Right column “boxed” streak */
+  .gh-card{
+    border:1px solid rgba(255,255,255,0.25);
+    border-radius:8px;
+    padding:12px;
+    background:rgba(255,255,255,0.02);
+  }
+  .gh-card img{ display:block; width:100%; height:auto; }
 </style>
-
 <div class="gh-wrap">
+  <!-- LEFT: main stats + green typing line -->
   <div class="gh-left">
     <a href="https://github.com/thesinghsec/github-readme-stats">
       <img
@@ -168,18 +185,20 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
         src="https://github-readme-stats.vercel.app/api?username=thesinghsec&theme=vision-friendly-dark&bg_color=00000000&hide_border=true&custom_title=%20"
         loading="lazy">
     </a>
+    <!-- Green typing line under stats (narrow like your screenshot) -->
+    <img class="gh-typing"
+      alt="typing animation"
+      src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=2500&pause=800&color=00FF00&vCenter=true&width=330&lines=Exfiltrating"
+      loading="lazy">
+  </div>
+  <!-- RIGHT: streak inside a bordered card -->
+  <div class="gh-card">
     <a href="https://git.io/streak-stats">
       <img
         alt="GitHub Streak"
         src="https://streak-stats.demolab.com?user=thesinghsec&theme=burnt-neon&border_radius=5&fire=EBCA01&ring=FF5B5B&currStreakNum=66FF00&sideNums=66FF00&sideLabels=EBEBEB"
         loading="lazy">
     </a>
-  </div>
-  <div class="gh-right">
-    <img
-      alt="hacker animation"
-      src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=2500&pause=500&color=00FF00&center=true&vCenter=true&width=350&lines=Access+Granted...;Initializing+Recon+Mode...;Deploying+Payload...;Exfiltrating+Data..."
-      loading="lazy">
   </div>
 </div>
 
