@@ -410,237 +410,423 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 
 
 
-<!-- Hacker typing with crackling sparks + optional sound -->
-<div class="hack-typing-wrap">
-  <img
-    class="hack-typing"
-    src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=2500&pause=900&color=00FF00&center=true&vCenter=true&width=750&lines=%22Never+give+up.+Never+back+down.%22"
-    alt="Never give up. Never back down.">
-  <canvas class="hack-sparks" aria-hidden="true"></canvas>
 
-  <!-- controls (sound/motion) -->
-  <div class="spark-controls">
-    <button id="sparkSoundBtn" type="button" aria-pressed="false" title="Enable spark sound">🔇 sound off</button>
-    <button id="sparkToggleBtn" type="button" aria-pressed="true" title="Pause/Resume sparks">⚡ on</button>
+
+
+
+
+
+
+
+
+
+<!-- ============ ELITE HACKER TYPING + CRAZY SPARKS ============ -->
+<div class="elite-hack-wrap" aria-live="off">
+  <div class="elite-typing-wrap">
+    <!-- Base typing SVG -->
+    <img
+      class="elite-typing base"
+      src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2200&pause=900&color=00FF00&center=true&vCenter=true&width=920&lines=%22Never+give+up.+Never+back+down.%22"
+      alt='“Never give up. Never back down.”'>
+    <!-- RGB glitch layers (for chromatic split) -->
+    <img class="elite-typing glitch g1" aria-hidden="true"
+      src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2200&pause=900&color=00FF00&center=true&vCenter=true&width=920&lines=%22Never+give+up.+Never+back+down.%22">
+    <img class="elite-typing glitch g2" aria-hidden="true"
+      src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2200&pause=900&color=00FF00&center=true&vCenter=true&width=920&lines=%22Never+give+up.+Never+back+down.%22">
+    <!-- Sparks canvas overlay -->
+    <canvas class="elite-sparks" aria-hidden="true"></canvas>
+    <!-- Shockwave canvas (for flash / shock) -->
+    <canvas class="elite-shock" aria-hidden="true"></canvas>
+    <!-- CRT noise/scanlines -->
+    <div class="crt-overlay" aria-hidden="true"></div>
+    <!-- Controls -->
+    <div class="elite-controls" aria-hidden="false">
+      <label>Intensity
+        <input id="intensity" type="range" min="0" max="3" step="1" value="2">
+      </label>
+      <button id="soundBtn" aria-pressed="false">🔇 Sound</button>
+      <button id="pauseBtn" aria-pressed="true">⏸ Pause</button>
+    </div>
   </div>
 </div>
 
 <style>
-  .hack-typing-wrap{
-    position:relative;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    margin:28px 0 8px;
-    width:100%;
-    /* subtle neon glow on the text itself */
-    filter: drop-shadow(0 0 6px #00ff00);
-  }
-  .hack-typing{ display:block; max-width:100%; height:auto; animation:flicker 2s infinite alternate; }
-  .hack-sparks{ position:absolute; inset:0; pointer-events:none; display:block; width:100%; height:100%; }
-  .spark-controls{
-    position:absolute; right:6px; bottom:-34px; display:flex; gap:6px; opacity:.75;
-    font-size:.9rem;
-  }
-  .spark-controls button{
-    background:#111; color:#ccc; border:1px solid #333; border-radius:6px; padding:4px 8px; cursor:pointer;
-  }
-  .spark-controls button[aria-pressed="true"]{ color:#0f0; border-color:#2a2; }
-  @keyframes flicker{
-    0%{ filter: drop-shadow(0 0 6px #00ff00) brightness(1) }
-    25%{ filter: drop-shadow(0 0 9px #00ff00) brightness(1.25) }
-    50%{ filter: drop-shadow(0 0 7px #00ff00) brightness(0.9) }
-    75%{ filter: drop-shadow(0 0 10px #00ff00) brightness(1.3) }
-    100%{ filter: drop-shadow(0 0 6px #00ff00) brightness(1) }
-  }
-  @media (prefers-reduced-motion: reduce){
-    .hack-typing{ animation:none }
-  }
+/* Container */
+.elite-hack-wrap { width:100%; display:flex; justify-content:center; margin:26px 0; }
+.elite-typing-wrap{
+  position:relative; width:100%; max-width:980px; display:flex; align-items:center; justify-content:center;
+  filter: drop-shadow(0 0 8px rgba(0,255,120,0.9));
+  overflow:visible;
+}
+
+/* base + glitch layers */
+.elite-typing{ display:block; max-width:100%; height:auto; user-select:none; pointer-events:none; }
+.elite-typing.base{ position:relative; z-index:10; mix-blend-mode:screen; }
+.elite-typing.glitch{ position:absolute; top:0; left:50%; transform:translateX(-50%); z-index:8; opacity:0.9; filter: blur(0.6px) contrast(1.1); }
+
+/* color tints for chroma split */
+.elite-typing.g1{ mix-blend-mode: screen; filter: hue-rotate(40deg) saturate(1.6) blur(0.8px); }
+.elite-typing.g2{ mix-blend-mode: screen; filter: hue-rotate(-40deg) saturate(1.6) blur(0.8px); }
+
+/* Canvas overlays */
+.elite-sparks, .elite-shock { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; z-index:20; }
+.elite-shock { z-index:30; }
+
+/* CRT overlay */
+.crt-overlay {
+  position:absolute; inset:0; z-index:35; pointer-events:none;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 100% 3px, 3px 100%;
+  mix-blend-mode: overlay; opacity:0.25;
+}
+
+/* Controls (small) */
+.elite-controls{
+  position:absolute; right:8px; bottom:-40px; z-index:50;
+  display:flex; gap:8px; align-items:center; font-size:13px;
+  background:rgba(0,0,0,0.5); padding:6px 8px; border-radius:8px; border:1px solid rgba(255,255,255,0.05);
+}
+.elite-controls input[type="range"]{ width:110px; }
+
+/* tiny flicker for base */
+@keyframes baseFlicker {
+  0%{ filter: drop-shadow(0 0 6px #00ff80) brightness(1); transform: translateY(0) }
+  50%{ filter: drop-shadow(0 0 14px #00ff80) brightness(1.2); transform: translateY(-0.6px) }
+  100%{ filter: drop-shadow(0 0 6px #00ff80) brightness(1); transform: translateY(0) }
+}
+.elite-typing.base { animation: baseFlicker 1.9s ease-in-out infinite; }
+
+/* glitch jitter */
+@keyframes glitchX {
+  0%{ transform: translateX(-50%) translateY(0) }
+  10%{ transform: translateX(calc(-50% + 2px)) translateY(-1px) }
+  20%{ transform: translateX(calc(-50% - 2px)) translateY(1px) }
+  30%{ transform: translateX(-50%) translateY(0) }
+  100%{ transform: translateX(-50%) translateY(0) }
+}
+.elite-typing.g1 { animation: glitchX 3.2s infinite; }
+.elite-typing.g2 { animation: glitchX 2.7s infinite reverse; }
+
+/* reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .elite-typing.base, .elite-typing.g1, .elite-typing.g2, .elite-sparks, .elite-shock { animation: none !important; opacity: 1 !important; }
+  .crt-overlay { display:none; }
+}
+
+/* responsive */
+@media (max-width:760px){
+  .elite-controls{ right:6px; bottom:-46px; font-size:12px; }
+}
 </style>
 
 <script>
+/* Elite Hacker: enhanced sparks + shock + sound
+   Single, self-contained script. Tweak CFG for taste.
+*/
 (function(){
-  const wrap   = document.querySelector('.hack-typing-wrap');
-  const canvas = document.querySelector('.hack-sparks');
-  const ctx    = canvas.getContext('2d', { alpha:true });
-  const btnSound  = document.getElementById('sparkSoundBtn');
-  const btnToggle = document.getElementById('sparkToggleBtn');
+  // elements
+  const wrap = document.querySelector('.elite-typing-wrap');
+  const sparkCanvas = wrap.querySelector('.elite-sparks');
+  const shockCanvas = wrap.querySelector('.elite-shock');
+  const baseImg = wrap.querySelector('.elite-typing.base');
+  const g1 = wrap.querySelector('.elite-typing.g1');
+  const g2 = wrap.querySelector('.elite-typing.g2');
+  const intensityInput = document.getElementById('intensity');
+  const soundBtn = document.getElementById('soundBtn');
+  const pauseBtn = document.getElementById('pauseBtn');
 
-  let W=0,H=0, particles=[], running=true, soundOn=false;
+  // contexts
+  const sctx = sparkCanvas.getContext('2d', {alpha:true});
+  const hctx = shockCanvas.getContext('2d', {alpha:true});
 
-  // Spark config
-  const CFG = {
-    rate: 28,             // ambient particles per second
-    gravity: 0.10,        // downward pull
-    drift: 0.35,          // random horizontal movement
-    life: [500, 1100],    // ms
-    size: [1.2, 2.6],     // px
-    colors: ['#aaff00','#ffff80','#ffffff'],
-    burstEveryMs: 1600,
-    burstCount: 30
-  };
-
-  // ===== WebAudio (click/crackle) =====
-  let audioCtx = null;
-  function ensureAudioCtx(){
-    if (!audioCtx) {
-      audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-    }
-  }
-  function crackleBurst(){
-    if (!soundOn || !audioCtx) return;
-    // generate a short noise burst + high click
-    const dur = 0.12;
-    const sr  = audioCtx.sampleRate;
-    const buffer = audioCtx.createBuffer(1, sr*dur, sr);
-    const data = buffer.getChannelData(0);
-    for (let i=0;i<data.length;i++){
-      // white noise with quick decay
-      const t = i / sr;
-      const decay = Math.exp(-20*t);
-      data[i] = (Math.random()*2-1) * 0.35 * decay;
-    }
-    const noise = audioCtx.createBufferSource();
-    noise.buffer = buffer;
-    const noiseGain = audioCtx.createGain();
-    noiseGain.gain.value = 0.15;
-    noise.connect(noiseGain).connect(audioCtx.destination);
-    noise.start();
-
-    // add a tiny high click
-    const osc = audioCtx.createOscillator();
-    osc.type = 'square';
-    osc.frequency.value = 1800 + Math.random()*600;
-    const og = audioCtx.createGain();
-    og.gain.setValueAtTime(0.12, audioCtx.currentTime);
-    og.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.06);
-    osc.connect(og).connect(audioCtx.destination);
-    osc.start();
-    osc.stop(audioCtx.currentTime + 0.07);
-  }
-
-  // ===== sizing (auto-sync with wrapper) =====
+  // sizing
+  let W=0, H=0;
   function resize(){
     const r = wrap.getBoundingClientRect();
-    canvas.width  = W = Math.max(1, Math.floor(r.width));
-    canvas.height = H = Math.max(1, Math.floor(r.height));
+    W = Math.max(1, Math.floor(r.width));
+    H = Math.max(1, Math.floor(r.height));
+    sparkCanvas.width = shockCanvas.width = W;
+    sparkCanvas.height = shockCanvas.height = H;
   }
   resize();
-  addEventListener('resize', resize);
   new ResizeObserver(resize).observe(wrap);
+  addEventListener('resize', resize);
 
-  // ===== particles =====
-  function rnd(min,max){ return min + Math.random()*(max-min); }
-  function pick(arr){ return arr[(Math.random()*arr.length)|0]; }
+  // particle stores
+  let sparks = [];
+  let trails = [];
+  let running = true;
+  let soundOn = false;
 
-  function spawn(n=1, burst=false){
-    const yBase = H*0.55;
+  // CONFIG - tweak these for more "craziness"
+  const CFG = {
+    ambientRate: 60,      // base particles per second (intensity scales)
+    gravity: 0.18,
+    drift: 0.6,
+    life: [420,1200],     // ms
+    size: [1.1,3.0],
+    colors: ['#a8ff00','#ffe86b','#ffffff','#6affff'], // neon greens + cyan + warm
+    burstEveryMs: 1600,
+    burstCountBase: 40,   // multiplied by intensity
+    trailLength: 6,       // how long a trail is
+    bigBurstChance: 0.12, // per burst chance for an extra mega burst
+    shockMax: 1.0         // shockwave strength
+  };
+
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reducedMotion) running = false;
+
+  // audio setup (deferred until user enables)
+  let audioCtx = null;
+  function initAudio(){
+    if (!audioCtx) audioCtx = new (window.AudioContext||window.webkitAudioContext)();
+  }
+  function playCrackle(intensity=1){
+    if(!soundOn || !audioCtx) return;
+    const now = audioCtx.currentTime;
+    // noise burst
+    const dur = 0.12 * Math.max(0.6, intensity);
+    const sr = audioCtx.sampleRate;
+    const buffer = audioCtx.createBuffer(1, sr*dur, sr);
+    const data = buffer.getChannelData(0);
+    for(let i=0;i<data.length;i++){
+      const t = i/sr;
+      data[i] = (Math.random()*2-1) * (0.35*Math.exp(-6*t)) * (0.8+Math.random()*0.8);
+    }
+    const src = audioCtx.createBufferSource();
+    src.buffer = buffer;
+    const g = audioCtx.createGain();
+    g.gain.value = 0.08 * intensity;
+    src.connect(g).connect(audioCtx.destination);
+    src.start(now);
+
+    // short high click
+    const o = audioCtx.createOscillator();
+    o.type = 'triangle';
+    o.frequency.value = 1600 + Math.random()*1200;
+    const og = audioCtx.createGain();
+    og.gain.setValueAtTime(0.09*intensity, now);
+    og.gain.exponentialRampToValueAtTime(0.0001, now + 0.05 * Math.max(0.8,intensity));
+    o.connect(og).connect(audioCtx.destination);
+    o.start(now);
+    o.stop(now + 0.06);
+  }
+
+  // helpers
+  const rand = (a,b)=> a + Math.random()*(b-a);
+  const pick = arr => arr[Math.floor(Math.random()*arr.length)];
+
+  // spawn function
+  function spawnSpark(n=1, burst=false, intensity=1){
+    const yBase = H * 0.56;
     for(let i=0;i<n;i++){
-      const x = rnd(W*0.08, W*0.92);
-      const vy = burst ? rnd(-1.4,-0.2) : rnd(-0.3, -0.05);
-      particles.push({
-        x, y: yBase + rnd(-6,6),
-        vx: rnd(-CFG.drift, CFG.drift),
+      const x = rand(W*0.06, W*0.94);
+      const vy = burst ? rand(-2.4,-0.5) : rand(-0.6, -0.06);
+      sparks.push({
+        x, y: yBase + rand(-8,8),
+        vx: rand(-CFG.drift, CFG.drift) * (1 + 0.8*(intensity-1)),
         vy,
-        life: rnd(CFG.life[0], CFG.life[1]),
+        size: rand(CFG.size[0], CFG.size[1]) * (0.9 + intensity*0.5),
         born: performance.now(),
-        size: rnd(CFG.size[0], CFG.size[1]),
-        color: pick(CFG.colors)
+        life: rand(CFG.life[0], CFG.life[1]) / (0.8 + (intensity*0.6)),
+        color: pick(CFG.colors),
+        trail: []
       });
     }
   }
 
+  // spawn ambient per frame (rate controlled)
   let lastSpawn = performance.now();
   let lastBurst = performance.now();
 
-  function tick(t){
+  function doTick(ts){
     if(!running) return;
-    const dt = t - lastSpawn;
-    const spawnCount = (dt/1000)*CFG.rate;
+    const now = ts;
+    // intensity scale
+    const intensityLevel = Number(intensityInput.value || 2);
+
+    // spawn ambient (scaled)
+    const dt = now - lastSpawn;
+    const targetRate = CFG.ambientRate * (0.4 + intensityLevel*0.8);
+    const spawnCount = (dt/1000)*targetRate;
     if (spawnCount >= 1){
-      spawn(spawnCount|0);
-      lastSpawn = t;
-    }
-    if (t - lastBurst > CFG.burstEveryMs){
-      spawn(CFG.burstCount, true);
-      crackleBurst();
-      lastBurst = t;
+      spawnSpark(Math.floor(spawnCount), false, intensityLevel);
+      lastSpawn = now;
     }
 
-    ctx.clearRect(0,0,W,H);
-    ctx.globalCompositeOperation = 'lighter';
-    const now = t;
+    // periodic burst
+    if (now - lastBurst > Math.max(600, CFG.burstEveryMs / (intensityLevel*0.9))){
+      const burstCount = Math.floor(CFG.burstCountBase * intensityLevel * (1 + Math.random()*0.5));
+      spawnSpark(burstCount, true, intensityLevel);
+      // occasional mega burst
+      if (Math.random() < CFG.bigBurstChance * intensityLevel){
+        spawnShock(now, Math.min(1, intensityLevel*0.9));
+      }
+      // sound
+      playCrackle(0.9 + intensityLevel*0.6);
+      lastBurst = now;
+    }
 
-    particles = particles.filter(p=>{
-      const age = now - p.born;
-      if (age > p.life) return false;
+    // physics + drawing
+    sctx.clearRect(0,0,W,H);
+    sctx.globalCompositeOperation = 'lighter';
 
-      p.vy += CFG.gravity * 0.05;
-      p.x  += p.vx;
-      p.y  += p.vy;
+    // update sparks
+    const timeNow = performance.now();
+    for (let i=sparks.length-1;i>=0;i--){
+      const p = sparks[i];
+      const age = timeNow - p.born;
+      if (age > p.life){
+        sparks.splice(i,1); continue;
+      }
+      // physics
+      p.vy += CFG.gravity * 0.06 * (0.8 + intensityLevel*0.4);
+      p.x += p.vx;
+      p.y += p.vy;
 
-      const fade = 1 - age/p.life;
-      const crackle = 0.6 + Math.random()*0.4;
-      const alpha = Math.max(0, fade*crackle);
+      // trail push
+      p.trail.unshift({x:p.x, y:p.y, t:timeNow});
+      if (p.trail.length > CFG.trailLength) p.trail.pop();
 
-      const g = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.size*3);
+      // fade
+      const fade = 1 - (age/p.life);
+      // draw trail (subtle)
+      for (let t=0;t<p.trail.length;t++){
+        const tt = p.trail[t];
+        const a = fade * (1 - t/p.trail.length) * 0.9;
+        const rad = (p.size + (p.trail.length - t)*0.6) * (1.2 - t*0.08);
+        const grad = sctx.createRadialGradient(tt.x, tt.y, 0, tt.x, tt.y, rad*3);
+        grad.addColorStop(0, p.color);
+        grad.addColorStop(1, 'transparent');
+        sctx.globalAlpha = a * 0.9;
+        sctx.fillStyle = grad;
+        sctx.beginPath();
+        sctx.arc(tt.x, tt.y, rad*2, 0, Math.PI*2);
+        sctx.fill();
+      }
+
+      // core spark
+      sctx.globalAlpha = 0.9 * fade;
+      const g = sctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.size*3.6);
       g.addColorStop(0, p.color);
       g.addColorStop(1, 'transparent');
-      ctx.fillStyle = g;
-      ctx.globalAlpha = alpha;
-      ctx.beginPath();
-      ctx.arc(p.x, p.y, p.size*3, 0, Math.PI*2);
-      ctx.fill();
-      ctx.globalAlpha = 1;
+      sctx.fillStyle = g;
+      sctx.beginPath();
+      sctx.arc(p.x, p.y, p.size*3, 0, Math.PI*2);
+      sctx.fill();
 
-      // bright pixel core
-      ctx.fillStyle = p.color;
-      ctx.fillRect(p.x-0.5, p.y-0.5, 1, 1);
+      // bright pixel
+      sctx.globalAlpha = Math.min(1, fade*1.2);
+      sctx.fillStyle = '#fff';
+      sctx.fillRect(p.x-0.5, p.y-0.5, 1, 1);
+      sctx.globalAlpha = 1;
+    }
 
-      return true;
-    });
+    // chromatic jitter on glitch layers (subtle)
+    const jitter = (Math.random()-0.5)*2 * (intensityLevel*0.6);
+    g1.style.transform = `translateX(calc(-50% + ${jitter}px)) translateY(${(Math.random()-0.5)*2}px)`;
+    g2.style.transform = `translateX(calc(-50% - ${jitter}px)) translateY(${(Math.random()-0.5)*2}px)`;
 
-    requestAnimationFrame(tick);
+    // shock draw (decays automatically)
+    drawShock(now);
+
+    requestAnimationFrame(doTick);
   }
-  requestAnimationFrame(tick);
 
-  // ===== controls =====
-  btnToggle.addEventListener('click', ()=>{
-    const pressed = btnToggle.getAttribute('aria-pressed') === 'true';
+  // ===== Shockwave / screen shake =====
+  let shocks = [];
+  function spawnShock(time, strength=0.8){
+    shocks.push({t:time, life: 650 + strength*600, s: strength});
+    // small camera shake via CSS transform
+    const shake = Math.min(6, Math.round(8 * strength));
+    wrap.style.transform = `translate(${rand(-shake,shake)}px, ${rand(-shake,shake)}px)`;
+    setTimeout(()=> wrap.style.transform = '', 140);
+  }
+  function drawShock(now){
+    hctx.clearRect(0,0,W,H);
+    for (let i=shocks.length-1;i>=0;i--){
+      const sh = shocks[i];
+      const age = now - sh.t;
+      if (age > sh.life){ shocks.splice(i,1); continue; }
+      const prog = age / sh.life;
+      const rad = Math.max(W,H) * (0.2 + prog*2.6) * (0.6 + sh.s);
+      const alpha = (1 - prog) * 0.9 * sh.s;
+      hctx.beginPath();
+      hctx.strokeStyle = `rgba(200,255,140,${alpha*0.45})`;
+      hctx.lineWidth = 2 + 12*(1-prog)*sh.s;
+      hctx.arc(W/2, H/2, rad, 0, Math.PI*2);
+      hctx.stroke();
+
+      // flash overlay
+      hctx.fillStyle = `rgba(180,255,120,${0.03 * sh.s * (1-prog)})`;
+      hctx.fillRect(0,0,W,H);
+    }
+  }
+
+  // start animation loop
+  if (!reducedMotion) requestAnimationFrame(doTick);
+
+  // controls
+  intensityInput.addEventListener('input', ()=>{ /* immediate effect via read each frame */ });
+
+  pauseBtn.addEventListener('click', ()=>{
+    const pressed = pauseBtn.getAttribute('aria-pressed') === 'true';
     if (pressed){
-      btnToggle.setAttribute('aria-pressed','false');
-      btnToggle.textContent = '⚡ off';
+      pauseBtn.setAttribute('aria-pressed','false'); pauseBtn.textContent = '▶ Resume';
       running = false;
+      // clear canvases
+      sctx.clearRect(0,0,W,H); hctx.clearRect(0,0,W,H);
     } else {
-      btnToggle.setAttribute('aria-pressed','true');
-      btnToggle.textContent = '⚡ on';
+      pauseBtn.setAttribute('aria-pressed','true'); pauseBtn.textContent = '⏸ Pause';
       running = true;
-      requestAnimationFrame(tick);
+      requestAnimationFrame(doTick);
     }
   });
 
-  btnSound.addEventListener('click', ()=>{
-    ensureAudioCtx(); // create on first click (user gesture)
-    const pressed = btnSound.getAttribute('aria-pressed') === 'true';
+  soundBtn.addEventListener('click', async ()=>{
+    const pressed = soundBtn.getAttribute('aria-pressed') === 'true';
     if (pressed){
-      btnSound.setAttribute('aria-pressed','false');
-      btnSound.textContent = '🔇 sound off';
-      soundOn = false;
+      soundBtn.setAttribute('aria-pressed','false'); soundBtn.textContent='🔇 Sound'; soundOn=false;
     } else {
-      btnSound.setAttribute('aria-pressed','true');
-      btnSound.textContent = '🔊 sound on';
+      // init audio on user gesture
+      initAudio();
+      try {
+        if (audioCtx.state === 'suspended') await audioCtx.resume();
+      } catch(e){}
+      soundBtn.setAttribute('aria-pressed','true'); soundBtn.textContent='🔊 Sound';
       soundOn = true;
+      // small confirmation tone
+      playCrackle(0.6);
     }
   });
 
-  // Respect reduced motion (pause animation by default)
-  if (matchMedia('(prefers-reduced-motion: reduce)').matches){
-    running = false;
-    btnToggle.setAttribute('aria-pressed','false');
-    btnToggle.textContent = '⚡ off';
-  }
+  // small initial burst to feel alive
+  setTimeout(()=>{ spawnSpark(18, true, 1.6); spawnShock(performance.now(), 0.9); playCrackle(1.0); }, 800);
+
+  // Respect reduced motion: disable sound & heavy effects
+  if (reducedMotion) { soundBtn.setAttribute('aria-pressed','false'); soundOn=false; pauseBtn.setAttribute('aria-pressed','false'); running=false; }
+
 })();
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
