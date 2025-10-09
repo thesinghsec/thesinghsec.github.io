@@ -149,6 +149,8 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 
 <h2 id="github_stats" align=''>GitHub Stats 👨‍💻</h2>
 
+<h2 id="github_stats" align=''>GitHub Stats 👨‍💻</h2>
+
 <table>
 <tr>
 <td width="55%">
