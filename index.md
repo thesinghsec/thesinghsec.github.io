@@ -148,25 +148,41 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 ![GOAD on VMware](https://img.shields.io/badge/GOAD%20on%20VMware-191970?style=for-the-badge&logo=vmware&logoColor=white)
 
 
-<h2 id="github_stats" style="text-align:center;">GitHub Stats 👨‍💻</h2>
 
-<div style="display: flex; justify-content: center; align-items: flex-start; gap: 20px; flex-wrap: wrap;">
-  <!-- Left column: GitHub stats and streaks -->
-  <div style="flex: 0 0 55%; min-width: 300px; text-align: center;">
+<h2 id="github_stats">GitHub Stats 👨‍💻</h2>
+
+<style>
+  /* optional: make it look like your screenshot */
+  .gh-wrap { display: grid; grid-template-columns: 55% 45%; gap: 1rem; align-items: center; }
+  .gh-left a img { display:block; width:100%; max-width: 700px; margin-bottom: 10px; }
+  .gh-right { text-align:center; }
+  .gh-right img { max-width: 350px; width:100%; }
+  @media (max-width: 800px){ .gh-wrap { grid-template-columns: 1fr; } }
+</style>
+
+<div class="gh-wrap">
+  <div class="gh-left">
     <a href="https://github.com/thesinghsec/github-readme-stats">
-      <img src="https://github-readme-stats.vercel.app/api?username=thesinghsec&theme=vision-friendly-dark&hide_border=true&custom_title= " alt="GitHub Stats" style="width:100%; max-width:450px;">
+      <img
+        alt="TheSinghSec's GitHub stats"
+        src="https://github-readme-stats.vercel.app/api?username=thesinghsec&theme=vision-friendly-dark&bg_color=00000000&hide_border=true&custom_title=%20"
+        loading="lazy">
     </a>
-    <br><br>
     <a href="https://git.io/streak-stats">
-      <img src="https://streak-stats.demolab.com?user=thesinghsec&theme=burnt-neon&border_radius=5&fire=EBCA01&ring=FF5B5B&currStreakNum=66FF00&sideNums=66FF00&sideLabels=EBEBEB" alt="GitHub Streak" style="width:100%; max-width:450px;">
+      <img
+        alt="GitHub Streak"
+        src="https://streak-stats.demolab.com?user=thesinghsec&theme=burnt-neon&border_radius=5&fire=EBCA01&ring=FF5B5B&currStreakNum=66FF00&sideNums=66FF00&sideLabels=EBEBEB"
+        loading="lazy">
     </a>
   </div>
-  <!-- Right column: Typing animation -->
-  <div style="flex: 0 0 45%; min-width: 300px; text-align: center;">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=2500&pause=500&color=00FF00&center=true&vCenter=true&width=350&lines=Access+Granted...;Initializing+Recon+Mode...;Deploying+Payload...;Exfiltrating+Data..." alt="hacker animation" style="max-width:100%;">
+  <div class="gh-right">
+    <img
+      alt="hacker animation"
+      src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=2500&pause=500&color=00FF00&center=true&vCenter=true&width=350&lines=Access+Granted...;Initializing+Recon+Mode...;Deploying+Payload...;Exfiltrating+Data..."
+      loading="lazy">
   </div>
-
 </div>
+
 
 
 
