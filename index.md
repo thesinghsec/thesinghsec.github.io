@@ -290,7 +290,7 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 </div>
 
 
-## Projects🚀
+## Projects 🚀
 
 ![Web Application Home Lab](https://img.shields.io/badge/Web%20Application%20Home%20Lab-8B0000?style=for-the-badge&logo=googlechrome&logoColor=white)
 ![Active Directory Home Lab](https://img.shields.io/badge/Active%20Directory%20Home%20Lab-004B23?style=for-the-badge&logo=microsoft&logoColor=white)
