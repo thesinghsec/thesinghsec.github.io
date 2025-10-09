@@ -407,6 +407,245 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 </script>
 
 
+
+
+
+<!-- Hacker typing with crackling sparks + optional sound -->
+<div class="hack-typing-wrap">
+  <img
+    class="hack-typing"
+    src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=2500&pause=900&color=00FF00&center=true&vCenter=true&width=750&lines=%22Never+give+up.+Never+back+down.%22"
+    alt="Never give up. Never back down.">
+  <canvas class="hack-sparks" aria-hidden="true"></canvas>
+
+  <!-- controls (sound/motion) -->
+  <div class="spark-controls">
+    <button id="sparkSoundBtn" type="button" aria-pressed="false" title="Enable spark sound">🔇 sound off</button>
+    <button id="sparkToggleBtn" type="button" aria-pressed="true" title="Pause/Resume sparks">⚡ on</button>
+  </div>
+</div>
+
+<style>
+  .hack-typing-wrap{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:28px 0 8px;
+    width:100%;
+    /* subtle neon glow on the text itself */
+    filter: drop-shadow(0 0 6px #00ff00);
+  }
+  .hack-typing{ display:block; max-width:100%; height:auto; animation:flicker 2s infinite alternate; }
+  .hack-sparks{ position:absolute; inset:0; pointer-events:none; display:block; width:100%; height:100%; }
+  .spark-controls{
+    position:absolute; right:6px; bottom:-34px; display:flex; gap:6px; opacity:.75;
+    font-size:.9rem;
+  }
+  .spark-controls button{
+    background:#111; color:#ccc; border:1px solid #333; border-radius:6px; padding:4px 8px; cursor:pointer;
+  }
+  .spark-controls button[aria-pressed="true"]{ color:#0f0; border-color:#2a2; }
+  @keyframes flicker{
+    0%{ filter: drop-shadow(0 0 6px #00ff00) brightness(1) }
+    25%{ filter: drop-shadow(0 0 9px #00ff00) brightness(1.25) }
+    50%{ filter: drop-shadow(0 0 7px #00ff00) brightness(0.9) }
+    75%{ filter: drop-shadow(0 0 10px #00ff00) brightness(1.3) }
+    100%{ filter: drop-shadow(0 0 6px #00ff00) brightness(1) }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .hack-typing{ animation:none }
+  }
+</style>
+
+<script>
+(function(){
+  const wrap   = document.querySelector('.hack-typing-wrap');
+  const canvas = document.querySelector('.hack-sparks');
+  const ctx    = canvas.getContext('2d', { alpha:true });
+  const btnSound  = document.getElementById('sparkSoundBtn');
+  const btnToggle = document.getElementById('sparkToggleBtn');
+
+  let W=0,H=0, particles=[], running=true, soundOn=false;
+
+  // Spark config
+  const CFG = {
+    rate: 28,             // ambient particles per second
+    gravity: 0.10,        // downward pull
+    drift: 0.35,          // random horizontal movement
+    life: [500, 1100],    // ms
+    size: [1.2, 2.6],     // px
+    colors: ['#aaff00','#ffff80','#ffffff'],
+    burstEveryMs: 1600,
+    burstCount: 30
+  };
+
+  // ===== WebAudio (click/crackle) =====
+  let audioCtx = null;
+  function ensureAudioCtx(){
+    if (!audioCtx) {
+      audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    }
+  }
+  function crackleBurst(){
+    if (!soundOn || !audioCtx) return;
+    // generate a short noise burst + high click
+    const dur = 0.12;
+    const sr  = audioCtx.sampleRate;
+    const buffer = audioCtx.createBuffer(1, sr*dur, sr);
+    const data = buffer.getChannelData(0);
+    for (let i=0;i<data.length;i++){
+      // white noise with quick decay
+      const t = i / sr;
+      const decay = Math.exp(-20*t);
+      data[i] = (Math.random()*2-1) * 0.35 * decay;
+    }
+    const noise = audioCtx.createBufferSource();
+    noise.buffer = buffer;
+    const noiseGain = audioCtx.createGain();
+    noiseGain.gain.value = 0.15;
+    noise.connect(noiseGain).connect(audioCtx.destination);
+    noise.start();
+
+    // add a tiny high click
+    const osc = audioCtx.createOscillator();
+    osc.type = 'square';
+    osc.frequency.value = 1800 + Math.random()*600;
+    const og = audioCtx.createGain();
+    og.gain.setValueAtTime(0.12, audioCtx.currentTime);
+    og.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.06);
+    osc.connect(og).connect(audioCtx.destination);
+    osc.start();
+    osc.stop(audioCtx.currentTime + 0.07);
+  }
+
+  // ===== sizing (auto-sync with wrapper) =====
+  function resize(){
+    const r = wrap.getBoundingClientRect();
+    canvas.width  = W = Math.max(1, Math.floor(r.width));
+    canvas.height = H = Math.max(1, Math.floor(r.height));
+  }
+  resize();
+  addEventListener('resize', resize);
+  new ResizeObserver(resize).observe(wrap);
+
+  // ===== particles =====
+  function rnd(min,max){ return min + Math.random()*(max-min); }
+  function pick(arr){ return arr[(Math.random()*arr.length)|0]; }
+
+  function spawn(n=1, burst=false){
+    const yBase = H*0.55;
+    for(let i=0;i<n;i++){
+      const x = rnd(W*0.08, W*0.92);
+      const vy = burst ? rnd(-1.4,-0.2) : rnd(-0.3, -0.05);
+      particles.push({
+        x, y: yBase + rnd(-6,6),
+        vx: rnd(-CFG.drift, CFG.drift),
+        vy,
+        life: rnd(CFG.life[0], CFG.life[1]),
+        born: performance.now(),
+        size: rnd(CFG.size[0], CFG.size[1]),
+        color: pick(CFG.colors)
+      });
+    }
+  }
+
+  let lastSpawn = performance.now();
+  let lastBurst = performance.now();
+
+  function tick(t){
+    if(!running) return;
+    const dt = t - lastSpawn;
+    const spawnCount = (dt/1000)*CFG.rate;
+    if (spawnCount >= 1){
+      spawn(spawnCount|0);
+      lastSpawn = t;
+    }
+    if (t - lastBurst > CFG.burstEveryMs){
+      spawn(CFG.burstCount, true);
+      crackleBurst();
+      lastBurst = t;
+    }
+
+    ctx.clearRect(0,0,W,H);
+    ctx.globalCompositeOperation = 'lighter';
+    const now = t;
+
+    particles = particles.filter(p=>{
+      const age = now - p.born;
+      if (age > p.life) return false;
+
+      p.vy += CFG.gravity * 0.05;
+      p.x  += p.vx;
+      p.y  += p.vy;
+
+      const fade = 1 - age/p.life;
+      const crackle = 0.6 + Math.random()*0.4;
+      const alpha = Math.max(0, fade*crackle);
+
+      const g = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.size*3);
+      g.addColorStop(0, p.color);
+      g.addColorStop(1, 'transparent');
+      ctx.fillStyle = g;
+      ctx.globalAlpha = alpha;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.size*3, 0, Math.PI*2);
+      ctx.fill();
+      ctx.globalAlpha = 1;
+
+      // bright pixel core
+      ctx.fillStyle = p.color;
+      ctx.fillRect(p.x-0.5, p.y-0.5, 1, 1);
+
+      return true;
+    });
+
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+
+  // ===== controls =====
+  btnToggle.addEventListener('click', ()=>{
+    const pressed = btnToggle.getAttribute('aria-pressed') === 'true';
+    if (pressed){
+      btnToggle.setAttribute('aria-pressed','false');
+      btnToggle.textContent = '⚡ off';
+      running = false;
+    } else {
+      btnToggle.setAttribute('aria-pressed','true');
+      btnToggle.textContent = '⚡ on';
+      running = true;
+      requestAnimationFrame(tick);
+    }
+  });
+
+  btnSound.addEventListener('click', ()=>{
+    ensureAudioCtx(); // create on first click (user gesture)
+    const pressed = btnSound.getAttribute('aria-pressed') === 'true';
+    if (pressed){
+      btnSound.setAttribute('aria-pressed','false');
+      btnSound.textContent = '🔇 sound off';
+      soundOn = false;
+    } else {
+      btnSound.setAttribute('aria-pressed','true');
+      btnSound.textContent = '🔊 sound on';
+      soundOn = true;
+    }
+  });
+
+  // Respect reduced motion (pause animation by default)
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches){
+    running = false;
+    btnToggle.setAttribute('aria-pressed','false');
+    btnToggle.textContent = '⚡ off';
+  }
+})();
+</script>
+
+
+
+
+
 <p align="center">
   <a>🌱</a>
 </p>
