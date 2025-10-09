@@ -154,61 +154,6 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 <h2 id="github_stats">GitHub Stats 👨‍💻</h2>
 
 <style>
-  /* Layout */
-  .gh-wrap{
-    display:grid;
-    grid-template-columns:55% 45%;
-    gap:16px;
-    align-items:start;
-  }
-  @media (max-width:900px){
-    .gh-wrap{ grid-template-columns:1fr; }
-  }
-  /* Left column */
-  .gh-left a img{ display:block; width:100%; height:auto; }
-  .gh-typing{ margin-top:12px; max-width:360px; }
-  /* Right column “boxed” streak */
-  .gh-card{
-    border:1px solid rgba(255,255,255,0.25);
-    border-radius:8px;
-    padding:12px;
-    background:rgba(255,255,255,0.02);
-  }
-  .gh-card img{ display:block; width:100%; height:auto; }
-</style>
-<div class="gh-wrap">
-  <!-- LEFT: main stats + green typing line -->
-  <div class="gh-left">
-    <a href="https://github.com/thesinghsec/github-readme-stats">
-      <img
-        alt="TheSinghSec's GitHub stats"
-        src="https://github-readme-stats.vercel.app/api?username=thesinghsec&theme=vision-friendly-dark&bg_color=00000000&hide_border=true&custom_title=TheSinghSec's%20GitHub%20Stats"
-        loading="lazy">
-    </a>
-    <!-- Green typing line under stats (narrow like your screenshot) -->
-    <img class="gh-typing" align="center"
-      alt="typing animation"
-      src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=2500&pause=500&color=00FF00&center=true&vCenter=true&width=350&lines=Access+Granted...;Initializing+Recon+Mode...;Deploying+Payload...;Exfiltrating+Data..."
-      loading="lazy">
-  </div>
-  <!-- RIGHT: streak inside a bordered card -->
-  <div class="gh-card">
-    <a href="https://git.io/streak-stats">
-      <img
-        alt="GitHub Streak"
-        src="https://streak-stats.demolab.com?user=thesinghsec&theme=burnt-neon&border_radius=1&fire=EBCA01&ring=FF5B5B&currStreakNum=66FF00&sideNums=66FF00&sideLabels=EBEBEB"
-        loading="lazy">
-    </a>
-  </div>
-</div>
-
-
-
-
-
-<h2 id="github_stats">GitHub Stats 👨‍💻</h2>
-
-<style>
   .gh-wrap {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -222,29 +167,19 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
     }
   }
 
-  /* Shared card styling */
+  /* Remove boxes */
   .gh-card, .gh-left-card {
-    border: 1px solid rgba(255,255,255,0.25);
-    border-radius: 8px;
-    background: rgba(255,255,255,0.02);
+    background: none;
+    border: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;   /* vertical + horizontal centering */
+    align-items: center;
     text-align: center;
-    padding: 20px;
+    padding: 0;
   }
 
-  /* Title in left card */
-  .gh-left-card h3 {
-    color: #FFB000;
-    font-weight: 600;
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 1.2rem;
-  }
-
-  /* GitHub Stats image */
+  /* Stats image */
   .gh-left-card a img {
     display: block;
     width: 100%;
@@ -252,16 +187,7 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
     height: auto;
   }
 
-  /* Typing animation under stats */
-  .gh-typing {
-    margin-top: 15px;
-    max-width: 360px;
-  }
-
-  /* Streak card image (no extra padding) */
-  .gh-card {
-    padding: 0;
-  }
+  /* Streak image */
   .gh-card img {
     display: block;
     width: 100%;
@@ -272,7 +198,7 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 </style>
 
 <div class="gh-wrap">
-  <!-- LEFT card -->
+  <!-- LEFT -->
   <div class="gh-left-card">
     <a href="https://github.com/thesinghsec/github-readme-stats">
       <img
@@ -282,7 +208,7 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
     </a>
   </div>
 
-  <!-- RIGHT card -->
+  <!-- RIGHT -->
   <div class="gh-card">
     <a href="https://git.io/streak-stats">
       <img
@@ -299,15 +225,180 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 
 
 
+
   
 
 <h2 id="donate" align="center"> Support⚡️</h2>
 
   <p align="center"><a href="https://buymeacoffee.com/thesinghsec"><img  src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black"/></a></p>
 
-<p align="center">
-  <b><i>"Never give up. Never back down."</i></b>
-</p>
-<p align="center">
+<!-- Hacker typing with crackling sparks -->
+<div class="hack-typing-wrap">
+  <!-- Typing line (SVG) -->
+  <img
+    class="hack-typing"
+    src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=2500&pause=900&color=00FF00&center=true&vCenter=true&width=750&lines=%22Never+give+up.+Never+back+down.%22"
+    alt="Never give up. Never back down.">
+  <!-- Sparks canvas -->
+  <canvas class="hack-sparks" aria-hidden="true"></canvas>
+</div>
+
+<style>
+  .hack-typing-wrap{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:28px 0 8px;
+    filter: drop-shadow(0 0 6px #00ff00);
+  }
+  .hack-typing{
+    display:block;
+    max-width:100%;
+    height:auto;
+    animation:flicker 2s infinite alternate;
+  }
+  /* Sparks canvas sits over the typing line */
+  .hack-sparks{
+    position:absolute;
+    inset:0;          /* fill the wrapper */
+    pointer-events:none;
+  }
+
+  /* Subtle glow flicker on the text */
+  @keyframes flicker{
+    0%{ filter: drop-shadow(0 0 6px #00ff00) brightness(1); }
+    25%{ filter: drop-shadow(0 0 9px #00ff00) brightness(1.25); }
+    50%{ filter: drop-shadow(0 0 7px #00ff00) brightness(0.9); }
+    75%{ filter: drop-shadow(0 0 10px #00ff00) brightness(1.3); }
+    100%{ filter: drop-shadow(0 0 6px #00ff00) brightness(1); }
+  }
+
+  /* Respect users who prefer reduced motion */
+  @media (prefers-reduced-motion: reduce){
+    .hack-typing{ animation:none }
+  }
+</style>
+
+<script>
+(function(){
+  const wrap     = document.querySelector('.hack-typing-wrap');
+  const canvas   = document.querySelector('.hack-sparks');
+  const ctx      = canvas.getContext('2d', {alpha:true});
+  let   W=0, H=0, particles=[], running=true;
+
+  // Config – tweak these
+  const CFG = {
+    rate: 28,             // particles spawned per second
+    gravity: 0.10,        // downward pull
+    drift: 0.35,          // horizontal randomness
+    life: [500, 1100],    // ms
+    size: [1.2, 2.6],     // px
+    colors: ['#aaff00','#ffff80','#ffffff'], // neon green → yellow → white
+    burstEveryMs: 1600,   // add a small burst periodically
+    burstCount: 30
+  };
+
+  const mediaReduce = matchMedia('(prefers-reduced-motion: reduce)');
+  if (mediaReduce.matches) running = false;
+
+  function resize(){
+    const r = wrap.getBoundingClientRect();
+    canvas.width  = W = Math.floor(r.width);
+    canvas.height = H = Math.floor(r.height);
+  }
+  resize();
+  addEventListener('resize', resize);
+  new ResizeObserver(resize).observe(wrap);
+
+  function rnd(min,max){ return min + Math.random()*(max-min); }
+  function pick(arr){ return arr[(Math.random()*arr.length)|0]; }
+
+  function spawn(n=1, burst=false){
+    const yBase = H*0.55;               // around baseline of the text image
+    for(let i=0;i<n;i++){
+      const x = rnd(W*0.08, W*0.92);    // within text area
+      const vy = burst ? rnd(-1.4,-0.2) : rnd(-0.3, -0.05);
+      const p = {
+        x, y: yBase + rnd(-6, 6),
+        vx: rnd(-CFG.drift, CFG.drift),
+        vy,
+        life: rnd(CFG.life[0], CFG.life[1]),
+        born: performance.now(),
+        size: rnd(CFG.size[0], CFG.size[1]),
+        color: pick(CFG.colors)
+      };
+      particles.push(p);
+    }
+  }
+
+  // ambient spawn
+  let lastSpawn = performance.now();
+  // periodic crackling burst
+  let lastBurst = performance.now();
+
+  function tick(t){
+    if(!running) return; // motion reduced
+
+    // spawn rate control
+    const dt = t - lastSpawn;
+    const spawnCount = (dt/1000)*CFG.rate;
+    if (spawnCount >= 1){
+      spawn(spawnCount|0);
+      lastSpawn = t;
+    }
+
+    // bursts
+    if (t - lastBurst > CFG.burstEveryMs){
+      spawn(CFG.burstCount, true);
+      lastBurst = t;
+    }
+
+    // draw
+    ctx.clearRect(0,0,W,H);
+    ctx.globalCompositeOperation = 'lighter';
+    const now = t;
+
+    particles = particles.filter(p=>{
+      const age = now - p.born;
+      if (age > p.life) return false;
+
+      // physics
+      p.vy += CFG.gravity * 0.05;
+      p.x  += p.vx;
+      p.y  += p.vy;
+
+      // fade + crackle alpha
+      const fade = 1 - age/p.life;
+      const crackle = 0.6 + Math.random()*0.4; // slight intensity jitter
+      const alpha = Math.max(0, fade*crackle);
+
+      // draw particle
+      const g = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.size*3);
+      g.addColorStop(0, p.color + Math.floor(alpha*255).toString(16).padStart(2,'0')); // center
+      g.addColorStop(1, 'transparent');
+
+      ctx.fillStyle = g;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.size*3, 0, Math.PI*2);
+      ctx.fill();
+
+      // tiny core
+      ctx.fillStyle = p.color;
+      ctx.globalAlpha = alpha;
+      ctx.fillRect(p.x-0.5, p.y-0.5, 1, 1);
+      ctx.globalAlpha = 1;
+
+      return true;
+    });
+
+    requestAnimationFrame(tick);
+  }
+
+  if (running) requestAnimationFrame(tick);
+})();
+</script>
+
+
 <a>🌱</a>
 </p>
