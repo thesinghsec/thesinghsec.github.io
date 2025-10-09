@@ -161,10 +161,9 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 </div>
 
 <style>
-  .badge{display:block;height:28px}
+  .badge{display:block;height:28px;filter:drop-shadow(0 0 1px rgba(255,255,255,0.2))}
   .badge:hover{filter:drop-shadow(0 0 6px rgba(0,255,128,.6))}
 </style>
-
 
 
 
