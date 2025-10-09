@@ -103,40 +103,40 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 
 <div style="border: 2px solid transparent; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
   <div align="left" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
-      <img src="https://img.shields.io/badge/Burp_Suite-FF6633?style=for-the-badge&logo=burp-suite&color=000000" alt="Burp Suite" />
-      <img src="https://img.shields.io/badge/Metasploit-008C8C?style=for-the-badge&logo=metasploit&color=000000" alt="Metasploit" />
-      <img src="https://img.shields.io/badge/Wireshark-009639?style=for-the-badge&logo=wireshark&color=000000" alt="Wireshark" />
-      <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&color=000000" alt="Bash" />
-      <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&color=000000" alt="Python" />
-      <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&color=000000" alt="Linux" />
-      <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&color=000000" alt="Git" />
-      <img src="https://img.shields.io/badge/Debian-D70A53?style=for-the-badge&logo=debian&color=000000" alt="Debian" />
-      <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&color=000000" alt="Docker" />
-      <img src="https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&color=000000" alt="Kali Linux" />
+    <img class="badge" src="https://img.shields.io/badge/Burp%20Suite-0D1117?style=for-the-badge&labelColor=111827&logo=burp-suite&logoColor=FF6633" alt="Burp Suite" />
+    <img class="badge" src="https://img.shields.io/badge/Metasploit-0D1117?style=for-the-badge&labelColor=111827&logo=metasploit&logoColor=00B7B7" alt="Metasploit" />
+    <img class="badge" src="https://img.shields.io/badge/Wireshark-0D1117?style=for-the-badge&labelColor=111827&logo=wireshark&logoColor=1E90FF" alt="Wireshark" />
+    <img class="badge" src="https://img.shields.io/badge/Bash-0D1117?style=for-the-badge&labelColor=111827&logo=gnu-bash&logoColor=4EAA25" alt="Bash" />
+    <img class="badge" src="https://img.shields.io/badge/Python-0D1117?style=for-the-badge&labelColor=111827&logo=python&logoColor=3776AB" alt="Python" />
+    <img class="badge" src="https://img.shields.io/badge/Linux-0D1117?style=for-the-badge&labelColor=111827&logo=linux&logoColor=FCC624" alt="Linux" />
+    <img class="badge" src="https://img.shields.io/badge/Git-0D1117?style=for-the-badge&labelColor=111827&logo=git&logoColor=F05032" alt="Git" />
+    <img class="badge" src="https://img.shields.io/badge/Debian-0D1117?style=for-the-badge&labelColor=111827&logo=debian&logoColor=D70A53" alt="Debian" />
+    <img class="badge" src="https://img.shields.io/badge/Docker-0D1117?style=for-the-badge&labelColor=111827&logo=docker&logoColor=2496ED" alt="Docker" />
+    <img class="badge" src="https://img.shields.io/badge/Kali%20Linux-0D1117?style=for-the-badge&labelColor=111827&logo=kali-linux&logoColor=557C94" alt="Kali Linux" />
   </div>
 </div>
+
+<style>
+  .badge {
+    display: block;
+    height: 28px;
+    filter: drop-shadow(0 0 1px rgba(255,255,255,0.15));
+    transition: filter 0.2s ease;
+  }
+  .badge:hover {
+    filter: drop-shadow(0 0 6px rgba(0,255,128,0.6));
+  }
+</style>
+
+
+
 
 ---
 
 ## Skills🧠
 
-<div style="border: 2px solid transparent; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
-  <div align="left" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
-    <img alt="Web Applications and APIs" src="https://img.shields.io/badge/-Web%20Apps%20%26%20APIs-0D1117?style=for-the-badge&logo=googlechrome&logoColor=1E90FF">
-    <img alt="External and Internal Infrastructure" src="https://img.shields.io/badge/-Infrastructure-0D1117?style=for-the-badge&logo=linux&logoColor=DA1F26">
-    <img alt="LLMs and Gen AI Apps Testing" src="https://img.shields.io/badge/-Gen%20AI%20App%20Testing-0D1117?style=for-the-badge&logo=openai&logoColor=FF8C00">
-    <img alt="Thick Client Applications" src="https://img.shields.io/badge/-Thick%20Client%20Apps-0D1117?style=for-the-badge&logo=windows&logoColor=5C2D91">
-    <img alt="Server/Laptop Build Reviews" src="https://img.shields.io/badge/-System%20Build%20Reviews-0D1117?style=for-the-badge&logo=dell&logoColor=32CD32">
-    <img alt="Android/iOS Mobile Applications" src="https://img.shields.io/badge/-Mobile%20App%20Testing-0D1117?style=for-the-badge&logo=android&logoColor=3DDC84">
-    <img alt="System Breakout Testing" src="https://img.shields.io/badge/-System%20Breakout%20Testing-0D1117?style=for-the-badge&logo=redhat&logoColor=DC143C">
-    <img alt="Azure/AWS/GCP Configuration Reviews" src="https://img.shields.io/badge/-Cloud%20Config%20Reviews-0D1117?style=for-the-badge&logo=cloudflare&logoColor=00BFFF">
-    <img alt="Email Phishing" src="https://img.shields.io/badge/-Email%20Phishing%20Testing-0D1117?style=for-the-badge&logo=maildotru&logoColor=FFD700">
-    <img alt="GitHub" src="https://img.shields.io/badge/-GitHub-0D1117?style=for-the-badge&logo=github&logoColor=FFFFFF">
-  </div>
-</div>
-
 <div style="border:2px solid transparent;border-radius:10px;padding:20px;margin-bottom:20px;">
-  <div align="left" style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px;">
+  <div align="left" style="display:flex;flex-wrap:wrap;justify-content:left;gap:10px;">
     <a><img class="badge" alt="Web Apps & APIs"
       src="https://img.shields.io/badge/Web%20Apps%20%26%20APIs-1A1F2B?style=for-the-badge&labelColor=111827&logo=googlechrome&logoColor=1E90FF"></a>
     <a><img class="badge" alt="Infrastructure"
