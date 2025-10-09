@@ -232,6 +232,13 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 
   <p align="center"><a href="https://buymeacoffee.com/thesinghsec"><img  src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black"/></a></p>
 
+
+
+
+
+
+
+
 <!-- Hacker typing with crackling sparks -->
 <div class="hack-typing-wrap">
   <!-- Typing line (SVG) -->
@@ -400,5 +407,6 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 </script>
 
 
-<a>🌱</a>
+<p align="center">
+  <a>🌱</a>
 </p>
