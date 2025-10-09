@@ -102,7 +102,7 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 <h2 id="knowledge_skills" align=''> Knowledge🧙‍♂️ </h2>
 
 <div style="border: 2px solid transparent; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
-  <div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+  <div align="left" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
     <img class="badge" src="https://img.shields.io/badge/Burp%20Suite-0D1117?style=for-the-badge&labelColor=111827&logo=burp-suite&logoColor=FF6633" alt="Burp Suite" />
     <img class="badge" src="https://img.shields.io/badge/Metasploit-0D1117?style=for-the-badge&labelColor=111827&logo=metasploit&logoColor=00B7B7" alt="Metasploit" />
     <img class="badge" src="https://img.shields.io/badge/Wireshark-0D1117?style=for-the-badge&labelColor=111827&logo=wireshark&logoColor=1E90FF" alt="Wireshark" />
@@ -136,7 +136,7 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 ## Skills🧠
 
 <div style="border:2px solid transparent;border-radius:10px;padding:20px;margin-bottom:20px;">
-  <div align="center" style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px;">
+  <div align="left" style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px;">
     <a><img class="badge" alt="Web Apps & APIs"
       src="https://img.shields.io/badge/Web%20Apps%20%26%20APIs-1A1F2B?style=for-the-badge&labelColor=111827&logo=googlechrome&logoColor=1E90FF"></a>
     <a><img class="badge" alt="Infrastructure"
