@@ -182,7 +182,7 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
     <a href="https://github.com/thesinghsec/github-readme-stats">
       <img
         alt="TheSinghSec's GitHub stats"
-        src="https://github-readme-stats.vercel.app/api?username=thesinghsec&theme=vision-friendly-dark&bg_color=00000000&hide_border=true&custom_title=%20"
+        src="https://github-readme-stats.vercel.app/api?username=thesinghsec&theme=vision-friendly-dark&bg_color=00000000&hide_border=true&custom_title=TheSinghSec's%20GitHub%20Stats"
         loading="lazy">
     </a>
     <!-- Green typing line under stats (narrow like your screenshot) -->
@@ -197,6 +197,64 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
       <img
         alt="GitHub Streak"
         src="https://streak-stats.demolab.com?user=thesinghsec&theme=burnt-neon&border_radius=1&fire=EBCA01&ring=FF5B5B&currStreakNum=66FF00&sideNums=66FF00&sideLabels=EBEBEB"
+        loading="lazy">
+    </a>
+  </div>
+</div>
+
+
+
+
+
+<h2 id="github_stats">GitHub Stats 👨‍💻</h2>
+
+<style>
+  .gh-wrap {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 16px;
+    align-items: start;
+  }
+  @media (max-width: 900px) {
+    .gh-wrap { grid-template-columns: 1fr; }
+  }
+
+  .gh-left a img { display: block; width: 100%; height: auto; }
+  .gh-typing { margin-top: 12px; max-width: 360px; }
+
+  .gh-card {
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 8px;
+    padding: 0; /* removed the padding */
+    background: rgba(255,255,255,0.02);
+  }
+  .gh-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0; /* no extra margin */
+  }
+</style>
+<div class="gh-wrap">
+  <!-- LEFT -->
+  <div class="gh-left">
+    <a href="https://github.com/thesinghsec/github-readme-stats">
+      <img
+        alt="TheSinghSec's GitHub stats"
+        src="https://github-readme-stats.vercel.app/api?username=thesinghsec&theme=vision-friendly-dark&bg_color=00000000&hide_border=true&custom_title=TheSinghSec%27s%20GitHub%20Stats"
+        loading="lazy">
+    </a>
+    <img class="gh-typing"
+      alt="typing animation"
+      src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=2500&pause=800&color=00FF00&vCenter=true&width=330&lines=Exfiltrating"
+      loading="lazy">
+  </div>
+  <!-- RIGHT -->
+  <div class="gh-card">
+    <a href="https://git.io/streak-stats">
+      <img
+        alt="GitHub Streak"
+        src="https://streak-stats.demolab.com?user=thesinghsec&theme=burnt-neon&border_radius=5&fire=EBCA01&ring=FF5B5B&currStreakNum=66FF00&sideNums=66FF00&sideLabels=EBEBEB"
         loading="lazy">
     </a>
   </div>
