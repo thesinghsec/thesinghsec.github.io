@@ -211,33 +211,70 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 <style>
   .gh-wrap {
     display: grid;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 1fr 1fr;
     gap: 16px;
-    align-items: start;
+    align-items: stretch;
   }
+
   @media (max-width: 900px) {
-    .gh-wrap { grid-template-columns: 1fr; }
+    .gh-wrap {
+      grid-template-columns: 1fr;
+    }
   }
 
-  .gh-left a img { display: block; width: 100%; height: auto; }
-  .gh-typing { margin-top: 12px; max-width: 360px; }
-
-  .gh-card {
+  /* Shared card styling */
+  .gh-card, .gh-left-card {
     border: 1px solid rgba(255,255,255,0.25);
     border-radius: 8px;
-    padding: 0; /* removed the padding */
     background: rgba(255,255,255,0.02);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   /* vertical + horizontal centering */
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* Title in left card */
+  .gh-left-card h3 {
+    color: #FFB000;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+  }
+
+  /* GitHub Stats image */
+  .gh-left-card a img {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+  }
+
+  /* Typing animation under stats */
+  .gh-typing {
+    margin-top: 15px;
+    max-width: 360px;
+  }
+
+  /* Streak card image (no extra padding) */
+  .gh-card {
+    padding: 0;
   }
   .gh-card img {
     display: block;
     width: 100%;
+    max-width: 480px;
     height: auto;
-    margin: 0; /* no extra margin */
+    margin: 0;
   }
 </style>
+
 <div class="gh-wrap">
-  <!-- LEFT -->
-  <div class="gh-left">
+  <!-- LEFT card -->
+  <div class="gh-left-card">
+    <h3>TheSinghSec's GitHub Stats</h3>
     <a href="https://github.com/thesinghsec/github-readme-stats">
       <img
         alt="TheSinghSec's GitHub stats"
@@ -249,7 +286,8 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
       src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=2500&pause=800&color=00FF00&vCenter=true&width=330&lines=Exfiltrating"
       loading="lazy">
   </div>
-  <!-- RIGHT -->
+
+  <!-- RIGHT card -->
   <div class="gh-card">
     <a href="https://git.io/streak-stats">
       <img
@@ -259,6 +297,7 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
     </a>
   </div>
 </div>
+
 
 
 
