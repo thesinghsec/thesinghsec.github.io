@@ -113,6 +113,75 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
     <img class="badge" src="https://img.shields.io/badge/Debian-0D1117?style=for-the-badge&labelColor=111827&logo=debian&logoColor=D70A53" alt="Debian" />
     <img class="badge" src="https://img.shields.io/badge/Docker-0D1117?style=for-the-badge&labelColor=111827&logo=docker&logoColor=2496ED" alt="Docker" />
     <img class="badge" src="https://img.shields.io/badge/Kali%20Linux-0D1117?style=for-the-badge&labelColor=111827&logo=kali-linux&logoColor=557C94" alt="Kali Linux" />
+    <img class="badge" src="https://img.shields.io/badge/theHarvester-0D1117?style=for-the-badge&labelColor=111827" alt="theHarvester" />
+    <img class="badge" src="https://img.shields.io/badge/Recon-ng-0D1117?style=for-the-badge&labelColor=111827" alt="Recon-ng" />
+    <img class="badge" src="https://img.shields.io/badge/Shodan-0D1117?style=for-the-badge&labelColor=111827&logo=shodan" alt="Shodan" />
+    <img class="badge" src="https://img.shields.io/badge/Censys-0D1117?style=for-the-badge&labelColor=111827" alt="Censys" />
+    <img class="badge" src="https://img.shields.io/badge/SpiderFoot-0D1117?style=for-the-badge&labelColor=111827" alt="SpiderFoot" />
+    <img class="badge" src="https://img.shields.io/badge/Amass-0D1117?style=for-the-badge&labelColor=111827" alt="Amass" />
+    <img class="badge" src="https://img.shields.io/badge/Sublist3r-0D1117?style=for-the-badge&labelColor=111827" alt="Sublist3r" />
+    <img class="badge" src="https://img.shields.io/badge/crt.sh-0D1117?style=for-the-badge&labelColor=111827" alt="crt.sh" />
+    <img class="badge" src="https://img.shields.io/badge/Nmap-0D1117?style=for-the-badge&labelColor=111827&logo=nmap" alt="Nmap" />
+    <img class="badge" src="https://img.shields.io/badge/masscan-0D1117?style=for-the-badge&labelColor=111827" alt="masscan" />
+    <img class="badge" src="https://img.shields.io/badge/RustScan-0D1117?style=for-the-badge&labelColor=111827" alt="RustScan" />
+    <img class="badge" src="https://img.shields.io/badge/Netdiscover-0D1117?style=for-the-badge&labelColor=111827" alt="Netdiscover" />
+    <img class="badge" src="https://img.shields.io/badge/arp-scan-0D1117?style=for-the-badge&labelColor=111827" alt="arp-scan" />
+    <img class="badge" src="https://img.shields.io/badge/Nessus-0D1117?style=for-the-badge&labelColor=111827" alt="Nessus" />
+    <img class="badge" src="https://img.shields.io/badge/Qualys-0D1117?style=for-the-badge&labelColor=111827" alt="Qualys" />
+    <img class="badge" src="https://img.shields.io/badge/Nuclei-0D1117?style=for-the-badge&labelColor=111827" alt="Nuclei" />
+    <img class="badge" src="https://img.shields.io/badge/OWASP%20ZAP-0D1117?style=for-the-badge&labelColor=111827&logo=owasp" alt="OWASP ZAP" />
+    <img class="badge" src="https://img.shields.io/badge/sqlmap-0D1117?style=for-the-badge&labelColor=111827" alt="sqlmap" />
+    <img class="badge" src="https://img.shields.io/badge/Wappalyzer-0D1117?style=for-the-badge&labelColor=111827" alt="Wappalyzer" />
+    <img class="badge" src="https://img.shields.io/badge/Nikto-0D1117?style=for-the-badge&labelColor=111827" alt="Nikto" />
+    <img class="badge" src="https://img.shields.io/badge/WFuzz-0D1117?style=for-the-badge&labelColor=111827" alt="WFuzz" />
+    <img class="badge" src="https://img.shields.io/badge/ffuf-0D1117?style=for-the-badge&labelColor=111827" alt="ffuf" />
+    <img class="badge" src="https://img.shields.io/badge/DirBuster-0D1117?style=for-the-badge&labelColor=111827" alt="DirBuster" />
+    <img class="badge" src="https://img.shields.io/badge/Dirsearch-0D1117?style=for-the-badge&labelColor=111827" alt="Dirsearch" />
+    <img class="badge" src="https://img.shields.io/badge/ParamSpider-0D1117?style=for-the-badge&labelColor=111827" alt="ParamSpider" />
+    <img class="badge" src="https://img.shields.io/badge/Arjun-0D1117?style=for-the-badge&labelColor=111827" alt="Arjun" />
+    <img class="badge" src="https://img.shields.io/badge/Aircrack-ng-0D1117?style=for-the-badge&labelColor=111827&logo=aircrack-ng" alt="Aircrack-ng" />
+    <img class="badge" src="https://img.shields.io/badge/Exploit-DB-0D1117?style=for-the-badge&labelColor=111827&logo=exploit-db" alt="Exploit-DB" />
+    <img class="badge" src="https://img.shields.io/badge/searchsploit-0D1117?style=for-the-badge&labelColor=111827" alt="searchsploit" />
+    <img class="badge" src="https://img.shields.io/badge/Hashcat-0D1117?style=for-the-badge&labelColor=111827&logo=hashcat" alt="Hashcat" />
+    <img class="badge" src="https://img.shields.io/badge/John%20the%20Ripper-0D1117?style=for-the-badge&labelColor=111827" alt="John the Ripper" />
+    <img class="badge" src="https://img.shields.io/badge/Hydra-0D1117?style=for-the-badge&labelColor=111827" alt="Hydra" />
+    <img class="badge" src="https://img.shields.io/badge/Medusa-0D1117?style=for-the-badge&labelColor=111827" alt="Medusa" />
+    <img class="badge" src="https://img.shields.io/badge/CrackMapExec-0D1117?style=for-the-badge&labelColor=111827" alt="CrackMapExec" />
+    <img class="badge" src="https://img.shields.io/badge/Responder-0D1117?style=for-the-badge&labelColor=111827" alt="Responder" />
+    <img class="badge" src="https://img.shields.io/badge/Mimikatz-0D1117?style=for-the-badge&labelColor=111827" alt="Mimikatz" />
+    <img class="badge" src="https://img.shields.io/badge/Impacket-0D1117?style=for-the-badge&labelColor=111827" alt="Impacket" />
+    <img class="badge" src="https://img.shields.io/badge/BloodHound-0D1117?style=for-the-badge&labelColor=111827" alt="BloodHound" />
+    <img class="badge" src="https://img.shields.io/badge/SharpHound-0D1117?style=for-the-badge&labelColor=111827" alt="SharpHound" />
+    <img class="badge" src="https://img.shields.io/badge/PowerView-0D1117?style=for-the-badge&labelColor=111827" alt="PowerView" />
+    <img class="badge" src="https://img.shields.io/badge/PowerSploit-0D1117?style=for-the-badge&labelColor=111827" alt="PowerSploit" />
+    <img class="badge" src="https://img.shields.io/badge/Rubeus-0D1117?style=for-the-badge&labelColor=111827" alt="Rubeus" />
+    <img class="badge" src="https://img.shields.io/badge/Kerberoast-0D1117?style=for-the-badge&labelColor=111827" alt="Kerberoast" />
+    <img class="badge" src="https://img.shields.io/badge/GetUserSPNs-0D1117?style=for-the-badge&labelColor=111827" alt="GetUserSPNs" />
+    <img class="badge" src="https://img.shields.io/badge/ADExplorer-0D1117?style=for-the-badge&labelColor=111827" alt="ADExplorer" />
+    <img class="badge" src="https://img.shields.io/badge/ADRecon-0D1117?style=for-the-badge&labelColor=111827" alt="ADRecon" />
+    <img class="badge" src="https://img.shields.io/badge/SecretsDump-0D1117?style=for-the-badge&labelColor=111827" alt="SecretsDump" />
+    <img class="badge" src="https://img.shields.io/badge/Sliver-0D1117?style=for-the-badge&labelColor=111827" alt="Sliver" />
+    <img class="badge" src="https://img.shields.io/badge/Evilginx2-0D1117?style=for-the-badge&labelColor=111827" alt="Evilginx2" />
+    <img class="badge" src="https://img.shields.io/badge/Linux%20Exploit%20Suggester-0D1117?style=for-the-badge&labelColor=111827" alt="Linux Exploit Suggester" />
+    <img class="badge" src="https://img.shields.io/badge/LinPEAS-0D1117?style=for-the-badge&labelColor=111827" alt="LinPEAS" />
+    <img class="badge" src="https://img.shields.io/badge/WinPEAS-0D1117?style=for-the-badge&labelColor=111827" alt="WinPEAS" />
+    <img class="badge" src="https://img.shields.io/badge/GTFOBins-0D1117?style=for-the-badge&labelColor=111827" alt="GTFOBins" />
+    <img class="badge" src="https://img.shields.io/badge/tcpdump-0D1117?style=for-the-badge&labelColor=111827&logo=tcpdump" alt="tcpdump" />
+    <img class="badge" src="https://img.shields.io/badge/Gophish-0D1117?style=for-the-badge&labelColor=111827" alt="Gophish" />
+    <img class="badge" src="https://img.shields.io/badge/MobSF-0D1117?style=for-the-badge&labelColor=111827" alt="MobSF" />
+    <img class="badge" src="https://img.shields.io/badge/Frida-0D1117?style=for-the-badge&labelColor=111827" alt="Frida" />
+    <img class="badge" src="https://img.shields.io/badge/APKTool-0D1117?style=for-the-badge&labelColor=111827" alt="APKTool" />
+    <img class="badge" src="https://img.shields.io/badge/Objection-0D1117?style=for-the-badge&labelColor=111827" alt="Objection" />
+    <img class="badge" src="https://img.shields.io/badge/Pacu-0D1117?style=for-the-badge&labelColor=111827" alt="Pacu" />
+    <img class="badge" src="https://img.shields.io/badge/CloudSploit-0D1117?style=for-the-badge&labelColor=111827" alt="CloudSploit" />
+    <img class="badge" src="https://img.shields.io/badge/ScoutSuite-0D1117?style=for-the-badge&labelColor=111827" alt="ScoutSuite" />
+    <img class="badge" src="https://img.shields.io/badge/Kube-bench-0D1117?style=for-the-badge&labelColor=111827" alt="Kube-bench" />
+    <img class="badge" src="https://img.shields.io/badge/Kube-hunter-0D1117?style=for-the-badge&labelColor=111827" alt="Kube-hunter" />
+    <img class="badge" src="https://img.shields.io/badge/Radare2-0D1117?style=for-the-badge&labelColor=111827" alt="Radare2" />
+    <img class="badge" src="https://img.shields.io/badge/SMBexec-0D1117?style=for-the-badge&labelColor=111827" alt="SMBexec" />
+    <img class="badge" src="https://img.shields.io/badge/ntlmrelayx-0D1117?style=for-the-badge&labelColor=111827" alt="ntlmrelayx" />
+    <img class="badge" src="https://img.shields.io/badge/Tenable-0D1117?style=for-the-badge&labelColor=111827" alt="Tenable" />
+    <img class="badge" src="https://img.shields.io/badge/Qualys-0D1117?style=for-the-badge&labelColor=111827" alt="Qualys" />
   </div>
 </div>
 
@@ -121,12 +190,14 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
     display: block;
     height: 28px;
     filter: drop-shadow(0 0 1px rgba(255,255,255,0.15));
-    transition: filter 0.2s ease;
+    transition: filter 0.18s ease, transform 0.18s ease;
   }
   .badge:hover {
     filter: drop-shadow(0 0 6px rgba(0,255,128,0.6));
+    transform: translateY(-2px);
   }
 </style>
+
 
 
 
