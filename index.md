@@ -136,7 +136,7 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 ## Skills🧠
 
 <div style="border:2px solid transparent;border-radius:10px;padding:20px;margin-bottom:20px;">
-  <div align="center" style="display:flex;flex-wrap:wrap;justify-content:left;gap:10px;">
+  <div align="center" style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px;">
     <a><img class="badge" alt="Web Apps & APIs"
       src="https://img.shields.io/badge/Web%20Apps%20%26%20APIs-1A1F2B?style=for-the-badge&labelColor=111827&logo=googlechrome&logoColor=1E90FF"></a>
     <a><img class="badge" alt="Infrastructure"
