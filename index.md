@@ -186,9 +186,9 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
         loading="lazy">
     </a>
     <!-- Green typing line under stats (narrow like your screenshot) -->
-    <img class="gh-typing"
+    <img class="gh-typing" align="center"
       alt="typing animation"
-      src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=2500&pause=800&color=00FF00&vCenter=true&width=330&lines=Exfiltrating"
+      src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=2500&pause=500&color=00FF00&center=true&vCenter=true&width=350&lines=Access+Granted...;Initializing+Recon+Mode...;Deploying+Payload...;Exfiltrating+Data..."
       loading="lazy">
   </div>
   <!-- RIGHT: streak inside a bordered card -->
@@ -196,7 +196,7 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
     <a href="https://git.io/streak-stats">
       <img
         alt="GitHub Streak"
-        src="https://streak-stats.demolab.com?user=thesinghsec&theme=burnt-neon&border_radius=5&fire=EBCA01&ring=FF5B5B&currStreakNum=66FF00&sideNums=66FF00&sideLabels=EBEBEB"
+        src="https://streak-stats.demolab.com?user=thesinghsec&theme=burnt-neon&border_radius=1&fire=EBCA01&ring=FF5B5B&currStreakNum=66FF00&sideNums=66FF00&sideLabels=EBEBEB"
         loading="lazy">
     </a>
   </div>
