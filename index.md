@@ -274,17 +274,12 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
 <div class="gh-wrap">
   <!-- LEFT card -->
   <div class="gh-left-card">
-    <h3>TheSinghSec's GitHub Stats</h3>
     <a href="https://github.com/thesinghsec/github-readme-stats">
       <img
         alt="TheSinghSec's GitHub stats"
         src="https://github-readme-stats.vercel.app/api?username=thesinghsec&theme=vision-friendly-dark&bg_color=00000000&hide_border=true&custom_title=TheSinghSec%27s%20GitHub%20Stats"
         loading="lazy">
     </a>
-    <img class="gh-typing"
-      alt="typing animation"
-      src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=2500&pause=800&color=00FF00&vCenter=true&width=330&lines=Exfiltrating"
-      loading="lazy">
   </div>
 
   <!-- RIGHT card -->
