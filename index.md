@@ -90,16 +90,52 @@ I'm **[`TheSinghSec`](https://www.linkedin.com/in/bikramjeetx/)**, a Security Re
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=2500&pause=1000&color=00FFFF&center=true&vCenter=true&width=600&lines=Updating%3A+Journey+to+Cybersecurity+Specialist" alt="Typing SVG" />
 </p>
 
-
-
-
-
-
-
-
 ---
 
-<h2 id="knowledge_skills" align=''> Knowledge 🧙‍♂️ </h2>
+
+<h2 id="security_standards" align=''> Security Standards & Frameworks 🛡️ </h2>
+
+<div style="border: 2px solid transparent; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
+  <div align="left" style="display: flex; flex-wrap: wrap; justify-content: left; gap: 10px;">
+    <!-- OWASP Testing Guide (OTG) -->
+    <img class="badge" alt="OWASP Testing Guide (OTG)"
+      src="https://img.shields.io/badge/OWASP%20Testing%20Guide%20(OTG)-0D1117?style=for-the-badge&labelColor=111827&logo=owasp&logoColor=FFFFFF" />
+    <!-- MITRE ATT&CK -->
+    <img class="badge" alt="MITRE ATT&CK"
+      src="https://img.shields.io/badge/MITRE%20ATT%26CK-0D1117?style=for-the-badge&labelColor=111827&logo=virustotal&logoColor=FF4C4C" />
+    <!-- CWE -->
+    <img class="badge" alt="CWE"
+      src="https://img.shields.io/badge/CWE-0D1117?style=for-the-badge&labelColor=111827&logo=codeberg&logoColor=FFD700" />
+    <!-- SANS Top 25 -->
+    <img class="badge" alt="SANS Top 25"
+      src="https://img.shields.io/badge/SANS%20Top%2025-0D1117?style=for-the-badge&labelColor=111827&logo=readthedocs&logoColor=FFFFFF" />
+    <!-- CIS Benchmarks -->
+    <img class="badge" alt="CIS Benchmarks"
+      src="https://img.shields.io/badge/CIS%20Benchmarks-0D1117?style=for-the-badge&labelColor=111827&logo=linuxfoundation&logoColor=00BFFF" />
+
+  </div>
+</div>
+
+<style>
+  .badge {
+    display: block;
+    height: 28px;
+    filter: drop-shadow(0 0 1px rgba(255,255,255,0.15));
+    transition: filter 0.18s ease, transform 0.18s ease;
+  }
+  .badge:hover {
+    filter: drop-shadow(0 0 6px rgba(0,255,128,0.6));
+    transform: translateY(-2px);
+  }
+</style>
+
+
+
+
+
+
+
+<h2 id="knowledge_skills" align=''> Knowledge ⚙️ </h2>
 
 <div style="border: 2px solid transparent; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
   <div align="left" style="display: flex; flex-wrap: wrap; justify-content: left; gap: 10px;">
