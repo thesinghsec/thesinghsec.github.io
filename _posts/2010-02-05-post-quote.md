@@ -2,6 +2,7 @@
 title: "Post: Quote"
 categories:
   - Blog
+classes: wide
 tags:
   - Post Formats
   - quote
