@@ -6,14 +6,22 @@
   <title>Hacker Vibe Footer</title>
   <style>
     /* Set the dark background and font styles */
+    body {
+      background-color: #111; /* Dark background to enhance the hacker vibe */
+      margin: 0;
+      font-family: 'Courier New', Courier, monospace;
+      color: #00ff00;
+    }
+
     footer {
       background: #000; /* Black background for that hacker vibe */
       color: #00ff00; /* Neon green text color */
-      font-family: 'Courier New', Courier, monospace; /* Classic terminal font */
       padding: 20px 0;
       text-align: center;
       border-top: 3px solid #00ff00; /* Neon green border on top */
       box-shadow: 0 0 10px rgba(0, 255, 0, 0.7); /* Neon glow around footer */
+      position: relative;
+      z-index: 100;
     }
 
     footer .footer-container {
@@ -23,12 +31,15 @@
       justify-content: center;
       max-width: 1200px;
       margin: 0 auto;
+      position: relative;
+      z-index: 200;
     }
 
     footer .footer-links {
       display: flex;
       gap: 20px;
       margin-top: 10px;
+      animation: fadeInLinks 2s ease-in-out;
     }
 
     footer .neon-link {
@@ -37,6 +48,27 @@
       font-weight: bold;
       text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00; /* Neon glow effect */
       transition: text-shadow 0.3s ease, transform 0.3s ease;
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+    }
+
+    footer .neon-link:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      bottom: 0;
+      left: 0;
+      background: #00ff00;
+      transform: scaleX(0);
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+
+    footer .neon-link:hover:before {
+      transform: scaleX(1);
+      transform-origin: bottom left;
     }
 
     footer .neon-link:hover {
@@ -47,6 +79,46 @@
     footer .neon-text {
       font-size: 1.2em;
       text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; /* Strong neon glow */
+      animation: glitch 1.5s infinite;
+    }
+
+    /* Animation for glitch effect */
+    @keyframes glitch {
+      0% {
+        text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;
+        transform: translate(0, 0);
+      }
+      20% {
+        text-shadow: 3px 0 5px #00ff00, -3px 0 5px #00ff00, 0 0 5px #00ff00;
+        transform: translate(-5px, 0);
+      }
+      40% {
+        text-shadow: -3px 0 5px #00ff00, 3px 0 5px #00ff00, 0 0 10px #00ff00;
+        transform: translate(5px, 0);
+      }
+      60% {
+        text-shadow: 3px 0 10px #00ff00, -3px 0 10px #00ff00, 0 0 15px #00ff00;
+        transform: translate(0, 0);
+      }
+      80% {
+        text-shadow: -3px 0 5px #00ff00, 3px 0 5px #00ff00, 0 0 5px #00ff00;
+        transform: translate(-5px, 0);
+      }
+      100% {
+        text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;
+        transform: translate(0, 0);
+      }
+    }
+
+    @keyframes fadeInLinks {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     /* Optional: Adding a terminal-like cursor */
@@ -60,6 +132,20 @@
         opacity: 0;
       }
     }
+
+    /* Adding a glitchy background effect */
+    footer:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+      opacity: 0.2;
+      z-index: 1;
+    }
+
   </style>
 </head>
 <body>
