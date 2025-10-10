@@ -76,6 +76,7 @@ author:
    #   url: "https://instagram.com/"
 
 footer:
+  copyright: "© 2025 Inside TheSinghSec."
   links:
     - label: "LinkedIn"
       icon: "fa-brands fa-linkedin"
