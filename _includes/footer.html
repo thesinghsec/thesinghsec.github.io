@@ -5,22 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hacker Vibe Footer</title>
   <style>
-    /* Set the dark background and font styles */
+    /* Base styling */
     body {
-      background-color: #111; /* Dark background to enhance the hacker vibe */
+      background-color: #111;
       margin: 0;
       font-family: 'Courier New', Courier, monospace;
+      color: #00ff00;
     }
 
+    /* Footer container */
     footer {
-      background: #000; /* Black background for that hacker vibe */
-      color: #00ff00; /* Neon green text color */
+      background: #000;
+      color: #00ff00;
       padding: 20px 0;
       text-align: center;
-      border-top: 3px solid #00ff00; /* Neon green border on top */
-      box-shadow: 0 0 10px rgba(0, 255, 0, 0.7); /* Neon glow around footer */
+      border-top: 3px solid #00ff00;
+      box-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
       position: relative;
-      z-index: 100;
     }
 
     footer .footer-container {
@@ -30,8 +31,6 @@
       justify-content: center;
       max-width: 1200px;
       margin: 0 auto;
-      position: relative;
-      z-index: 200;
     }
 
     footer .footer-links {
@@ -48,26 +47,6 @@
       text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;
       transition: text-shadow 0.3s ease, transform 0.3s ease;
       position: relative;
-      display: inline-block;
-      overflow: hidden;
-    }
-
-    footer .neon-link:before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 3px;
-      bottom: 0;
-      left: 0;
-      background: #00ff00;
-      transform: scaleX(0);
-      transform-origin: bottom right;
-      transition: transform 0.25s ease-out;
-    }
-
-    footer .neon-link:hover:before {
-      transform: scaleX(1);
-      transform-origin: bottom left;
     }
 
     footer .neon-link:hover {
@@ -112,7 +91,7 @@
       }
     }
 
-    /* Optional: Terminal-like blinking cursor */
+    /* Terminal-like blinking cursor */
     footer .copyright:after {
       content: '|';
       animation: blink 1s step-end infinite;
@@ -124,7 +103,14 @@
       }
     }
 
-    /* Removed footer:before (was causing the extra glowing box) */
+    /* Remove any pseudo-elements that could cause stray boxes */
+    footer::before,
+    footer::after,
+    body::before,
+    body::after {
+      content: none !important;
+      display: none !important;
+    }
   </style>
 </head>
 <body>
