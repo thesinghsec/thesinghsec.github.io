@@ -1,5 +1,6 @@
 ---
 title: "Post: Notice"
+classes: wide
 categories:
   - Blog
 tags:
